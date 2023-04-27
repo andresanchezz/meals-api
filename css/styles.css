@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.categories ::-webkit-scrollbar {
+  background-color: rgb(253, 253, 253);
+  width: 3px;
+}
+.categories ::-webkit-scrollbar-thumb {
+  background-color: rgb(0, 0, 0);
+}
+.categories .all-card {
+  font-style: italic;
+  font-weight: 400;
+}
+.categories .all-card button {
+  border: none;
+  background-color: white;
+  padding: 0;
+  margin: 0;
+}
+.categories .all-card .cards-custom {
+  background-color: rgb(255, 255, 255);
+  border: none;
+  overflow: auto;
+  margin: 2rem 3rem;
+  width: 340px;
+  height: 300px;
+  border-radius: 10px 0px 0px 10px;
+  text-transform: uppercase;
+  text-align: justify;
+}
+.categories .all-card .cards-custom img {
+  width: 90%;
+}
+.categories .all-card .cards-custom img:hover {
+  transform: scale(1.1);
+}/*# sourceMappingURL=styles.css.map */
