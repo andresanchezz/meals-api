@@ -3,37 +3,62 @@
   padding: 0;
 }
 
-.categories ::-webkit-scrollbar {
+h2 {
+  font-size: 36px;
+  font-style: italic;
+}
+
+input {
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(5, 0, 0);
+  border: 1px solid rgb(190, 190, 190);
+  width: 50%;
+  padding: 0.3rem;
+  background-color: rgba(48, 46, 46, 0.226);
+}
+
+.categories, .meals {
+  color: rgb(0, 0, 0);
+  margin: 1rem 0;
+  border-top: 1px solid black;
+  background-color: rgba(255, 255, 255, 0.719);
+}
+.categories ::-webkit-scrollbar, .meals ::-webkit-scrollbar {
   background-color: rgb(253, 253, 253);
-  width: 3px;
+  width: 4px;
 }
-.categories ::-webkit-scrollbar-thumb {
-  background-color: rgb(0, 0, 0);
+.categories ::-webkit-scrollbar-thumb, .meals ::-webkit-scrollbar-thumb {
+  background-color: rgb(116, 92, 92);
 }
-.categories .all-card {
+.categories .all-card, .meals .all-card {
   font-style: italic;
   font-weight: 400;
 }
-.categories .all-card button {
+.categories .all-card h2, .meals .all-card h2 {
+  font-size: 22px;
+}
+.categories .all-card button, .meals .all-card button {
   border: none;
   background-color: white;
   padding: 0;
   margin: 0;
 }
-.categories .all-card .cards-custom {
+.categories .all-card .cards-custom, .meals .all-card .cards-custom {
   background-color: rgb(255, 255, 255);
+  padding: 2rem;
   border: none;
   overflow: auto;
-  margin: 2rem 3rem;
-  width: 340px;
-  height: 300px;
+  margin: 0.5rem 3rem;
+  width: 350px;
+  height: 250px;
   border-radius: 10px 0px 0px 10px;
   text-transform: uppercase;
-  text-align: justify;
+  text-align: center;
+  box-shadow: 5px 5px 5px 2px rgb(100, 100, 100);
 }
-.categories .all-card .cards-custom img {
+.categories .all-card .cards-custom img, .meals .all-card .cards-custom img {
+  text-align: center;
   width: 90%;
-}
-.categories .all-card .cards-custom img:hover {
-  transform: scale(1.1);
 }/*# sourceMappingURL=styles.css.map */
