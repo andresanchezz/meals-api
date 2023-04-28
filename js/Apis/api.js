@@ -22,7 +22,20 @@ const byCategories = async (category)=>{
 }
 
 
+const byCategoriesName = async (name)=>{
+    try {
+        const resp = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${name}`);
+        const data = await resp.json();
+        return data
+    } catch (error) {
+        console.log('El error fue ', error);
+    }
+}
+
+
+
 export default {
     getCategories,
-    byCategories
+    byCategories,
+    byCategoriesName
 }

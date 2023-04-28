@@ -8,7 +8,7 @@ h2 {
   font-style: italic;
 }
 
-input {
+input[type=text] {
   border-radius: 4px;
   font-weight: bold;
   font-size: 20px;
@@ -17,6 +17,16 @@ input {
   width: 50%;
   padding: 0.3rem;
   background-color: rgba(48, 46, 46, 0.226);
+}
+
+input {
+  margin: 0 1rem;
+}
+
+.radios {
+  height: 40px;
+  align-items: center;
+  justify-content: center;
 }
 
 .categories, .meals {

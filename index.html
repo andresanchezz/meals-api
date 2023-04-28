@@ -15,8 +15,17 @@
             <input type="text" placeholder="Search meals by names below " id="recipe">
         </div>
 
+        <div class="radios d-flex mt-2">
+            <div class="flex-wrap"> 
+                <input type="radio" name="searchBy"  id="category" checked>
+                <label for="bycategory">Search by category</label>
+                <input type="radio" name="searchBy" id="name">
+                <label for="byname">Search by name</label> 
+            </div>
+        </div>
+        
         <div id="meals" class="meals d-flex flex-wrap justify-content-center"></div>
-        <h2 class="text-center mt-3 bg-primary p-2">Categories section</h2>
+        <h2 class="text-center mt-3 bg-primary p-2">Categories u can search</h2>
         <div id="categories" class="categories d-flex flex-wrap justify-content-center"></div>
     </div>
     <script src="main.js" type="module"></script>

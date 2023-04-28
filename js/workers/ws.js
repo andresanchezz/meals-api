@@ -36,7 +36,32 @@ let ws = {
             meals.push(element)
         });
         meals.forEach(element => {
-            console.log(element);
+            html += `
+            <div class="text-center my-5 all-card">
+            <h2>${element.strMeal}</h2>
+            <div class="card cards-custom">
+                <img src="${element.strMealThumb}" class="" alt="Img of food categories">
+        </div>
+        </div>
+            `
+        });
+       } catch (error) {
+        console.log('Data not found yet');
+       }
+
+        return html
+    },
+
+    async showSearchName(valueInput){
+        let html = '';
+        let data = await api.byCategoriesName(valueInput)
+        let meals = []
+
+       try {
+        data.meals.forEach(element => {
+            meals.push(element)
+        });
+        meals.forEach(element => {
             html += `
             <div class="text-center my-5 all-card">
             <h2>${element.strMeal}</h2>
